@@ -1,0 +1,19 @@
+.note{
+    margin-top: 1rem;
+    width: 190px;
+    min-height: 30px;
+    border-radius: .3rem;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+
+    p{
+        padding: .1rem .5rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        span{
+            color: rgb(255, 255, 255);
+            cursor: pointer;
+        }
+    }
+}
