@@ -1,1 +1,0 @@
-# notea-app-redux
