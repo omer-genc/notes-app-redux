@@ -1,0 +1,112 @@
+.app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100vw;
+    height: 100vh;
+    background-color: #eaeaea;
+
+    .header {
+        
+
+        h1 {
+            font-size: 2rem;
+            color: #808080;
+        }
+    }
+
+    .search-box {
+        width: 100%;
+        max-width: 300px;
+        padding: 1rem;
+
+        input {
+            width: 100%;
+            padding: 0.5rem 1rem;
+            border: 1px solid #808080;
+            border-radius: 2rem;
+            font-size: 1rem;
+
+        }
+    }
+
+    .add-note-box {
+        width: 100%;
+        max-width: 500px;
+        padding: 1rem;
+        border: 1px solid #808080;
+        background-color: white;
+
+        textarea {
+            width: 100%;
+            height: 300px;
+            font-size: 1rem;
+            resize: none;
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        .add-note-buttons {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+
+
+            .select-color {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+                button {
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                    border: 1px solid #808080;
+                    background-color: white;
+                    margin: 0 0.5rem;
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: #808080;
+                    }
+                }
+            }
+
+            .add-button {
+                button {
+                    width: 100%;
+                    padding: 0.2rem 2rem;
+                    border: 1px solid #808080;
+                    border-radius: 2rem;
+                    font-size: 1rem;
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: #808080;
+                    }
+                }
+            }
+        }
+    }
+
+    .notes-box{
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: row;
+        background-color: yellow;
+        width: 500px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .note{
+            width: 150px;
+            min-height: 30px;
+            background-color: red;
+        }
+    }
+}
